@@ -61,12 +61,20 @@
     <Compile Include="Model\WaggonNumberTest.cs" />
     <Compile Include="Model\WaggonTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ConfigBuilderRepositoryTest.cs" />
+    <Compile Include="Repositories\IPAddressRepositoryTest.cs" />
+    <Compile Include="Repositories\WaggonRepositoryTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ConfigBuilderApp\ConfigBuilderApp.csproj">
       <Project>{cf6a90b7-a414-498e-8c87-0d3a56c869af}</Project>
       <Name>ConfigBuilderApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Repositories\ConfigBuilderConfiguration.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

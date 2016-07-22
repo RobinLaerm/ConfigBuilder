@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConfigBuilderApp.Model.Camera" Collapsed="true">
+    <Position X="1.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAQAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.ConfigBuilder" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAMAAAkgEAQIAIAAAAAAgAIAMgAAAAAABAEE=</HashCode>
+      <FileName>Model\ConfigBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.Device" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Device.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.IPMask" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAAA=</HashCode>
+      <FileName>Model\IPMask.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.NetworkAttachedStorage" Collapsed="true">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NetworkAttachedStorage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.NetworkVideoRecorder" Collapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NetworkVideoRecorder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.PartOfIPAddress" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAgAAAAAAAAAAEAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\PartOfIPAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.Setting" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAgAAAAAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Setting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.Subsystem" Collapsed="true">
+    <Position X="1.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Model\Subsystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemKdr" Collapsed="true">
+    <Position X="4.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAIAAAAAgAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemKdr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemKlima" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemKlima.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemRelay" Collapsed="true">
+    <Position X="2.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemRelay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemWithIPAddress" Collapsed="true">
+    <Position X="1.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemWithIPAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.Switch" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Switch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.Usage" Collapsed="true">
+    <Position X="11" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Usage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.Waggon" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEEAAgAAgAAAAAAAAAAAAAAAAEAAAgAQAAgAAA=</HashCode>
+      <FileName>Model\Waggon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.WaggonNumber" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAgAAAAAAAIAAAAAAQAAAAAA=</HashCode>
+      <FileName>Model\WaggonNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.WaggonType" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAQEAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\WaggonType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemDataItemOverFtp" Collapsed="true">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemDataItemOverFtp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemFtp" Collapsed="true">
+    <Position X="10.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemFtp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemMonitoring" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemMonitoring.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemNetwork" Collapsed="true">
+    <Position X="2.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemNetwork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemTopology" Collapsed="true">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemTopology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemNxVideo" Collapsed="true">
+    <Position X="6.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemNxVideo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemHbu" Collapsed="true">
+    <Position X="3" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemHbu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConfigBuilderApp.Model.SubsystemDoors" Collapsed="true">
+    <Position X="5.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\SubsystemDoors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
