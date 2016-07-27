@@ -58,7 +58,9 @@
     <Compile Include="Repositories\ConfigBuilderRepository.cs" />
     <Compile Include="Repositories\IPAddressRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
+    <Compile Include="Repositories\UsageRepository.cs" />
     <Compile Include="Repositories\WaggonRepository.cs" />
+    <Compile Include="Repositories\WaggonTypeRepository.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
