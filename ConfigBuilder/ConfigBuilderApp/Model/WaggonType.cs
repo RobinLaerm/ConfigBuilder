@@ -21,7 +21,7 @@ namespace ConfigBuilderApp.Model
         public WaggonType(string typeName, string usageName)
         {
             this.Name = typeName;
-            this.Usage = usageName;
+            this.UsageName = usageName;
             this.Cameras = this.m_Cameras = new List<Camera>();
             this.Devices = this.m_Devices = new List<Device>();
             this.Switches = this.m_Switches = new List<Switch>();
@@ -36,7 +36,7 @@ namespace ConfigBuilderApp.Model
         /// <summary>
         /// The specific usage this waggon type is for. This is a reference to the id.
         /// </summary>
-        public readonly string Usage;
+        public readonly string UsageName;
 
         public IReadOnlyCollection<Camera> Cameras { get; private set; }
 
@@ -46,6 +46,7 @@ namespace ConfigBuilderApp.Model
 
         public IReadOnlyCollection<Subsystem> Subsystems { get; private set; }
 
+        #region Camera functions
         public void AddCamera(Camera camera)
         {
             if (camera == null) throw new ArgumentNullException("camera");
@@ -63,7 +64,9 @@ namespace ConfigBuilderApp.Model
             var camera = GetCamera(id);
             this.m_Cameras.Remove(camera);
         }
+        #endregion
 
+        #region Device functions
         public void AddDevice(Device device)
         {
             if (device == null) throw new ArgumentNullException("device");
@@ -81,20 +84,61 @@ namespace ConfigBuilderApp.Model
             var device = GetDevice(id);
             m_Devices.Remove(device);
         }
+        #endregion
 
+        #region Switch functions
+        public void AddSwitch(Switch newSwitch)
+        {
+            if (newSwitch == null) throw new ArgumentNullException("newSwitch");
+            if (m_Switches.Contains(newSwitch)) throw new InvalidOperationException("newSwitch");
+            m_Switches.Add(newSwitch);
+        }
 
+        public Switch GetSwitch(string id)
+        {
+            return m_Switches.First(s => s.Id.Equals(id));
+        }
+
+        public void RemoveSwitch(string id)
+        {
+            var mySwitch = GetSwitch(id);
+            m_Switches.Remove(mySwitch);
+        }
+
+        #endregion
+
+        #region Subsystem functions
+        public void AddSubsystem(Subsystem subsystem)
+        {
+            if (subsystem == null) throw new ArgumentNullException("subsystem");
+            if (m_Subsystems.Contains(subsystem)) throw new InvalidOperationException("There is already a subsystem with the same id in internal list.");
+            m_Subsystems.Add(subsystem);
+        }
+
+        public Subsystem GetSubsystem(string id)
+        {
+            return m_Subsystems.First(s => s.Type.Equals(id));
+        }
+
+        public void RemoveSubsystem(string id)
+        {
+            var subsystem = GetSubsystem(id);
+            m_Subsystems.Remove(subsystem);
+        }
+
+        #endregion
 
         public override bool Equals(object obj)
         {
             WaggonType waggonType = obj as WaggonType;
             if (waggonType == null) return false;
             return this.Name.Equals(waggonType.Name)
-                && this.Usage.Equals(waggonType.Usage);
+                && this.UsageName.Equals(waggonType.UsageName);
         }
 
         public override int GetHashCode()
         {
-            return this.Name.GetHashCode() | this.Usage.GetHashCode();
+            return this.Name.GetHashCode() | this.UsageName.GetHashCode();
         }
     }
 }

@@ -7,43 +7,40 @@ using System.Threading.Tasks;
 namespace ConfigBuilderApp.Model
 {
     /// <summary>
-    /// Represents a waggon. It contains all necessary informations about a waggon
-    /// like number, type, devices, subsystems, etc.
-    /// It is the root object for waggons.
+    /// Represents a waggon.
     /// </summary>
     public class Waggon
     {
-        private List<WaggonType> m_WaggonTypes;
+        private List<WaggonTypeWithUsage> m_WaggonTypeWithUsageList;
 
-        public Waggon(WaggonNumber number)
+        public Waggon(string identifier)
         {
-            this.WaggonNumber = number;
-            this.m_WaggonTypes = new List<WaggonType>();
-            this.WaggonTypes = m_WaggonTypes;
+            this.Identifier = identifier;
+            this.WaggonTypeWithUsageList = m_WaggonTypeWithUsageList = new List<WaggonTypeWithUsage>();
         }
 
-        public WaggonNumber WaggonNumber { get; private set; }
+        public string Identifier { get; private set; }
         public string IPMask { get; set; }
         public string IPGroup { get; set; }
-        public IReadOnlyCollection<WaggonType> WaggonTypes { get; private set; }
 
+        public IReadOnlyCollection<WaggonTypeWithUsage> WaggonTypeWithUsageList { get; private set; }
 
-        public void AddWaggonType(WaggonType waggonType)
+        public void AddWaggonTypeWithUsageList(WaggonTypeWithUsage waggonTypeWithUsage)
         {
-            if (waggonType == null) throw new ArgumentNullException("waggonType");
-            this.m_WaggonTypes.Add(waggonType);
+            if (waggonTypeWithUsage == null) throw new ArgumentNullException("waggonTypeWithUsage");
+            if (m_WaggonTypeWithUsageList.Contains(waggonTypeWithUsage)) throw new InvalidOperationException("There is already a WaggonTypeWithUsage with the same waggon type and usage in internal list.");
+            m_WaggonTypeWithUsageList.Add(waggonTypeWithUsage);
         }
 
-        public WaggonType GetWaggonType(string typeName, string usage)
+        public WaggonTypeWithUsage GetWaggonTypeWithUsage(string waggonTypeName, string usageName)
         {
-            return m_WaggonTypes.First(wt => wt.Name.Equals(typeName) && wt.Usage.Name.Equals(usage));
+            return m_WaggonTypeWithUsageList.First(w => w.WaggonTypeName.Equals(waggonTypeName) && w.UsageName.Equals(usageName));
         }
 
-        public void RemoveWaggonType(string typeName, string usage)
+        public void RemoveWaggonTypeWithUsage(string waggonTypeName, string usageName)
         {
-            var waggonType = GetWaggonType(typeName, usage);
-            m_WaggonTypes.Remove(waggonType);
+            var waggonType = GetWaggonTypeWithUsage(waggonTypeName, usageName);
+            m_WaggonTypeWithUsageList.Remove(waggonType);
         }
-
     }
 }

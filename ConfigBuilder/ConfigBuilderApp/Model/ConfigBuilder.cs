@@ -97,8 +97,8 @@ namespace ConfigBuilderApp.Model
         public void AddWaggon(Waggon waggon)
         {
             if (waggon == null) throw new ArgumentNullException("waggon");
-            if (this.Waggons.FirstOrDefault((w) => w.WaggonNumber.Equals(waggon.WaggonNumber)) != null)
-                throw new InvalidOperationException(string.Format("Waggon with key {0} already exists in internal list.", waggon.WaggonNumber));
+            if (this.Waggons.FirstOrDefault((w) => w.Identifier.Equals(waggon.Identifier)) != null)
+                throw new InvalidOperationException(string.Format("Waggon with identifier {0} already exists in internal list.", waggon.Identifier));
             this.m_Waggons.Add(waggon);
         }
 
@@ -109,7 +109,7 @@ namespace ConfigBuilderApp.Model
         /// <returns></returns>
         public Waggon GetWaggon(string identifier)
         {
-            return this.Waggons.First((w) => w.WaggonNumber.Identifier.Equals(identifier, StringComparison.OrdinalIgnoreCase));
+            return this.Waggons.First((w) => w.Identifier.Equals(identifier, StringComparison.OrdinalIgnoreCase));
         }
 
         /// <summary>

@@ -39,16 +39,19 @@ namespace ConfigBuilderApp.Repositories
                 }
                 else
                 {
-                    waggon = new Waggon(new WaggonNumber(identifier));
+                    string ipMask = waggonNumberNode.Attributes["IPMask"].Value;
+                    string ipGroup = waggonNumberNode.Attributes["IPGroup"].Value;
+                    waggon = new Waggon(identifier);
+                    waggon.IPMask = ipMask;
+                    waggon.IPGroup = ipGroup;
                     waggons.Add(waggon);
-                    m_Waggons.Add(waggon.WaggonNumber.Identifier, waggon);
+                    m_Waggons.Add(waggon.Identifier, waggon);
                 }
 
                 string typeName = waggonNumberNode.Attributes["WaggonType"].Value;
                 string usageName = waggonNumberNode.Attributes["Usage"].Value;
-                waggon.AddWaggonType(new WaggonType(typeName, new Usage(usageName)));
+                waggon.AddWaggonTypeWithUsageList(new WaggonTypeWithUsage(typeName, usageName));
             }
-
 
             return waggons;
         }

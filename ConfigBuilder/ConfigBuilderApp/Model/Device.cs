@@ -25,8 +25,8 @@ namespace ConfigBuilderApp.Model
         public string Type { get; private set; }
 
         /// <summary>
-        /// 
+        /// Reference to the ip address.
         /// </summary>
-        public PartOfIPAddress PartOfIPAddress { get; set; }
+        public string ReferenceId { get; set; }
     }
 }

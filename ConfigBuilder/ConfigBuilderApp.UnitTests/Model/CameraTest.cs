@@ -21,11 +21,10 @@ namespace ConfigBuilderApp.UnitTests.Model
         {
             Camera camera = new Camera("1");
             camera.Name = "MyCamera1";
-            camera.PartOfIPAddress = new PartOfIPAddress("Camera01", "x.x.x.11");
+            camera.ReferenceId = "Camera01";
 
             Assert.AreEqual("MyCamera1", camera.Name);
-            Assert.AreEqual("Camera01", camera.PartOfIPAddress.ReferenceId);
-            Assert.AreEqual("x.x.x.11", camera.PartOfIPAddress.Part);
+            Assert.AreEqual("Camera01", camera.ReferenceId);
         }
 
 

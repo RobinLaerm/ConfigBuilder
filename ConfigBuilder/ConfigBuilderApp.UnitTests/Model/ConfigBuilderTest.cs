@@ -44,7 +44,7 @@ namespace ConfigBuilderApp.UnitTests.Model
         {
             string identifier = "111111-11111-1";
             ConfigBuilder configuration = CreateFakeConfigBuilderWithSomeValues();
-            string actual = configuration.GetWaggon(identifier).WaggonNumber.Identifier;
+            string actual = configuration.GetWaggon(identifier).Identifier;
             Assert.AreEqual(identifier, actual);
         }
 
@@ -112,7 +112,7 @@ namespace ConfigBuilderApp.UnitTests.Model
 
         private Waggon CreateFakeWaggon(string identifier)
         {
-            Waggon waggon = new Waggon(new WaggonNumber(identifier));
+            Waggon waggon = new Waggon(identifier);
             return waggon;
         }
 
