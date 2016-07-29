@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConfigBuilderConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  
+  <WaggonNumbers>
+    <!-- Cleanup -->
+    <WaggonNumber Identifier="Cleanup" IPMask="127.0.0.1" WaggonType="Cleanup" IPGroup="Cleanup" Usage="Cleanup"  />
+    <WaggonNumber Identifier="999999999999" IPMask="127.0.0.1" WaggonType="Cleanup" IPGroup="Cleanup" Usage="Cleanup"  />
+
+    <!-- Test -->
+    <!--Links außen-->
+    <WaggonNumber Identifier="91806-10000-0" IPMask="10.228.10.x" WaggonType="TestLokomotive" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="508086-10000-0" IPMask="10.228.10.x" WaggonType="TestSteuerwagen" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-10000-0" IPMask="10.228.10.x" WaggonType="TestSteuerwagen" IPGroup="DB" Usage="Videoanzeige" />
+
+    <!--Mitte links-->
+    <WaggonNumber Identifier="508026-81096-9" IPMask="10.228.96.x" WaggonType="TestMittelwagen" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <!--Mitte rechts-->
+    <WaggonNumber Identifier="508026-81100-9" IPMask="10.228.100.x" WaggonType="TestMittelwagen" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!---Rechts außen-->
+    <!--<WaggonNumber Identifier="508086-81020-9" IPMask="10.228.20.x" WaggonType="TestSteuerwagen" IPGroup="DB" Usage="Videoaufzeichnung" />-->
+    <WaggonNumber Identifier="508086-81020-9" IPMask="10.228.20.x" WaggonType="TestSteuerwagen" IPGroup="DB" Usage="Videoanzeige" />
+    <WaggonNumber Identifier="508086-81020-9" IPMask="10.228.20.x" WaggonType="TestBaWü" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+
+    <!-- Haardachse, Steuerwagen, R7670HA1 -->
+    <WaggonNumber Identifier="508086-81014-2" IPMask="10.64.14.x" WaggonType="R7670HA1" IPGroup="DB" Usage="Videoanzeige" />
+    <WaggonNumber Identifier="508086-81014-2" IPMask="10.64.14.x" WaggonType="R7670HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81015-9" IPMask="10.64.15.x" WaggonType="R7670HA1" IPGroup="DB" Usage="Videoanzeige" />
+    <WaggonNumber Identifier="508086-81015-9" IPMask="10.64.15.x" WaggonType="R7670HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81017-5" IPMask="10.64.17.x" WaggonType="R7670HA1" IPGroup="DB" Usage="Videoanzeige" />
+    <WaggonNumber Identifier="508086-81017-5" IPMask="10.64.17.x" WaggonType="R7670HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Steuerwagen, R7670HA2 -->
+    <WaggonNumber Identifier="508086-81012-6" IPMask="10.64.12.x" WaggonType="R7670HA2" IPGroup="DB" Usage="Videoanzeige" />
+    <WaggonNumber Identifier="508086-81012-6" IPMask="10.64.12.x" WaggonType="R7670HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81013-4" IPMask="10.64.13.x" WaggonType="R7670HA2" IPGroup="DB" Usage="Videoanzeige" />
+    <WaggonNumber Identifier="508086-81013-4" IPMask="10.64.13.x" WaggonType="R7670HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7810HA1 -->
+    <WaggonNumber Identifier="508026-85016-6" IPMask="10.20.16.x" WaggonType="R7810HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85017-4" IPMask="10.20.17.x" WaggonType="R7810HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85018-2" IPMask="10.20.18.x" WaggonType="R7810HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85019-0" IPMask="10.20.19.x" WaggonType="R7810HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85020-8" IPMask="10.20.20.x" WaggonType="R7810HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7810HA2 -->
+    <WaggonNumber Identifier="508026-85012-5" IPMask="10.20.12.x" WaggonType="R7810HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85013-3" IPMask="10.20.13.x" WaggonType="R7810HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85014-1" IPMask="10.20.14.x" WaggonType="R7810HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85015-8" IPMask="10.20.15.x" WaggonType="R7810HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7814HA1 -->
+    <WaggonNumber Identifier="508026-81279-4" IPMask="10.17.23.x" WaggonType="R7814HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81280-2" IPMask="10.17.24.x" WaggonType="R7814HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7814HA2 -->
+    <WaggonNumber Identifier="508026-81277-8" IPMask="10.17.21.x" WaggonType="R7814HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81278-6" IPMask="10.17.22.x" WaggonType="R7814HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7814HA3 -->
+    <WaggonNumber Identifier="508026-81133-3" IPMask="10.16.133.x" WaggonType="R7814HA3" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7814HA4 -->
+    <WaggonNumber Identifier="508026-81132-5" IPMask="10.16.132.x" WaggonType="R7814HA4" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7864HA1 -->
+    <WaggonNumber Identifier="508036-85001-6" IPMask="10.24.1.x" WaggonType="R7864HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-85002-4" IPMask="10.24.2.x" WaggonType="R7864HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-85003-2" IPMask="10.24.3.x" WaggonType="R7864HA1" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Mittelwagen, R7864HA2 -->
+    <WaggonNumber Identifier="508036-85004-0" IPMask="10.24.4.x" WaggonType="R7864HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-85005-7" IPMask="10.24.5.x" WaggonType="R7864HA2" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Haardachse, Lokomotive, E1461HA -->
+    <WaggonNumber Identifier="91806-146117-7" IPMask="10.80.117.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="91806-146117-7" IPMask="10.80.117.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_B" />
+    <WaggonNumber Identifier="91806-146118-5" IPMask="10.80.118.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="91806-146118-5" IPMask="10.80.118.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_B" />
+    <WaggonNumber Identifier="91806-146119-3" IPMask="10.80.119.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="91806-146119-3" IPMask="10.80.119.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_B" />
+    <WaggonNumber Identifier="91806-146120-1" IPMask="10.80.120.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="91806-146120-1" IPMask="10.80.120.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_B" />
+    <WaggonNumber Identifier="91806-146121-9" IPMask="10.80.121.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="91806-146121-9" IPMask="10.80.121.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_B" />
+    <WaggonNumber Identifier="91806-146122-7" IPMask="10.80.122.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_A" />
+    <WaggonNumber Identifier="91806-146122-7" IPMask="10.80.122.x" WaggonType="E1461HA" IPGroup="DB" Usage="Pult_B" />
+
+    <!-- MWNK -->
+    <WaggonNumber Identifier="508080-35314-9" IPMask="10.41.58.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35156-9" IPMask="10.28.156.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35043-9" IPMask="10.28.43.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35158-5" IPMask="10.28.158.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35045-4" IPMask="10.28.45.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35159-3" IPMask="10.28.159.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35046-2" IPMask="10.28.46.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35160-1" IPMask="10.28.160.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35047-0" IPMask="10.28.47.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35167-6" IPMask="10.28.167.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35049-6" IPMask="10.28.49.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35308-1" IPMask="10.41.52.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35170-0" IPMask="10.28.170.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35051-2" IPMask="10.28.51.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35172-6" IPMask="10.28.172.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35055-3" IPMask="10.28.55.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35309-9" IPMask="10.41.53.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35173-4" IPMask="10.28.173.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35092-6" IPMask="10.28.92.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35175-9" IPMask="10.28.175.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35093-4" IPMask="10.28.93.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35310-7" IPMask="10.41.54.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35176-7" IPMask="10.28.176.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35094-2" IPMask="10.28.94.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35177-5" IPMask="10.28.177.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35095-9" IPMask="10.28.95.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35307-3" IPMask="10.41.51.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35154-4" IPMask="10.28.154.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35096-7" IPMask="10.28.96.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35155-1" IPMask="10.28.155.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35098-3" IPMask="10.28.98.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35315-6" IPMask="10.41.59.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35157-7" IPMask="10.28.157.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35099-1" IPMask="10.28.99.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35161-9" IPMask="10.28.161.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35110-6" IPMask="10.28.110.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35316-4" IPMask="10.41.60.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35162-7" IPMask="10.28.162.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35111-4" IPMask="10.28.111.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35163-5" IPMask="10.28.163.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35114-8" IPMask="10.28.114.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35318-0" IPMask="10.41.62.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35164-3" IPMask="10.28.164.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35115-5" IPMask="10.28.115.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35165-0" IPMask="10.28.165.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35044-7" IPMask="10.28.44.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35319-8" IPMask="10.41.63.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35166-8" IPMask="10.28.166.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35052-0" IPMask="10.28.52.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35168-4" IPMask="10.28.168.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35053-8" IPMask="10.28.53.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35312-3" IPMask="10.41.56.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35169-2" IPMask="10.28.169.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35060-3" IPMask="10.28.60.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35171-8" IPMask="10.28.171.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35313-1" IPMask="10.41.57.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35062-9" IPMask="10.28.62.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35174-2" IPMask="10.28.174.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35097-5" IPMask="10.28.97.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35317-2" IPMask="10.41.61.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35178-3" IPMask="10.28.178.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35112-2" IPMask="10.28.112.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35179-1" IPMask="10.28.179.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35377-6" IPMask="10.41.121.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35113-0" IPMask="10.28.113.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35180-9" IPMask="10.28.180.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35181-7" IPMask="10.28.181.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35182-5" IPMask="10.28.182.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35183-3" IPMask="10.28.183.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35184-1" IPMask="10.28.184.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508080-35379-2" IPMask="10.41.123.x" WaggonType="R7619MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35420-1" IPMask="10.9.164.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35039-6" IPMask="10.56.39.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35433-4" IPMask="10.9.177.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35432-6" IPMask="10.9.176.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35415-1" IPMask="10.9.159.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35430-0" IPMask="10.9.174.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35129-6" IPMask="10.28.129.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35185-8" IPMask="10.28.185.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35045-3" IPMask="10.56.45.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35131-2" IPMask="10.28.131.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35434-2" IPMask="10.9.178.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35186-6" IPMask="10.28.186.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35132-0" IPMask="10.28.132.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35435-9" IPMask="10.9.179.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35436-7" IPMask="10.9.180.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35416-9" IPMask="10.9.160.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35047-9" IPMask="10.56.47.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35438-3" IPMask="10.9.182.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35445-8" IPMask="10.9.189.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35133-8" IPMask="10.28.133.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35032-1" IPMask="10.56.32.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35478-9" IPMask="10.9.222.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35437-5" IPMask="10.9.181.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35135-3" IPMask="10.28.135.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35048-7" IPMask="10.56.48.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35477-1" IPMask="10.9.221.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35479-7" IPMask="10.9.223.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35137-9" IPMask="10.28.137.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35397-1" IPMask="10.9.141.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35033-9" IPMask="10.56.33.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35138-7" IPMask="10.28.138.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35049-5" IPMask="10.56.49.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35439-1" IPMask="10.9.183.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35440-9" IPMask="10.9.184.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35025-5" IPMask="10.56.25.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35139-5" IPMask="10.28.139.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35441-7" IPMask="10.9.185.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35442-5" IPMask="10.9.186.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35141-1" IPMask="10.28.141.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35029-7" IPMask="10.56.29.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35443-3" IPMask="10.9.187.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35444-1" IPMask="10.9.188.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35145-2" IPMask="10.28.145.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35446-6" IPMask="10.9.190.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35447-4" IPMask="10.9.191.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35130-4" IPMask="10.28.130.x" WaggonType="R7580MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35030-5" IPMask="10.56.30.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35421-9" IPMask="10.9.165.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35422-7" IPMask="10.9.166.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35448-2" IPMask="10.9.192.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35031-3" IPMask="10.56.31.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35429-2" IPMask="10.9.173.x" WaggonType="R7530MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35188-2" IPMask="10.28.188.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35189-0" IPMask="10.28.189.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35190-8" IPMask="10.28.190.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35191-6" IPMask="10.28.191.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35192-4" IPMask="10.28.192.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35187-4" IPMask="10.28.187.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35193-2" IPMask="10.28.193.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35034-7" IPMask="10.56.34.x" WaggonType="R7630MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35063-7" IPMask="10.28.63.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-35087-6" IPMask="10.28.87.x" WaggonType="R7569MWNK" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Nord Ost -->
+    <WaggonNumber Identifier="508086-75014-0" IPMask="10.60.14.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75014-1" IPMask="10.32.14.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75034-1" IPMask="10.12.34.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75035-8" IPMask="10.12.35.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75022-6" IPMask="10.12.22.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75007-4" IPMask="10.60.7.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75024-0" IPMask="10.32.24.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75020-0" IPMask="10.12.20.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75026-7" IPMask="10.12.26.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75033-3" IPMask="10.12.33.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75003-3" IPMask="10.60.3.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75005-9" IPMask="10.32.5.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75031-7" IPMask="10.12.31.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75018-4" IPMask="10.12.18.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75027-5" IPMask="10.12.27.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75009-0" IPMask="10.60.9.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75013-3" IPMask="10.32.13.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75001-0" IPMask="10.12.1.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75036-6" IPMask="10.12.36.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75107-5" IPMask="10.12.107.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75011-6" IPMask="10.60.11.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75019-0" IPMask="10.32.19.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75118-2" IPMask="10.12.118.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75116-6" IPMask="10.12.116.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75115-8" IPMask="10.12.115.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75015-7" IPMask="10.60.15.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75015-8" IPMask="10.32.15.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75120-8" IPMask="10.12.120.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75119-0" IPMask="10.12.119.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75111-7" IPMask="10.12.111.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75001-7" IPMask="10.60.1.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75012-5" IPMask="10.32.12.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75106-7" IPMask="10.12.106.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75122-4" IPMask="10.12.122.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75123-2" IPMask="10.12.123.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75008-2" IPMask="10.60.8.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75010-9" IPMask="10.32.10.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75114-1" IPMask="10.12.114.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75110-9" IPMask="10.12.110.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75117-4" IPMask="10.12.117.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75002-6" IPMask="10.32.2.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75112-5" IPMask="10.12.112.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75125-7" IPMask="10.12.125.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75024-2" IPMask="10.12.24.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75002-5" IPMask="10.60.2.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75004-2" IPMask="10.32.4.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75017-6" IPMask="10.12.17.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75108-3" IPMask="10.12.108.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75124-0" IPMask="10.12.124.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75006-6" IPMask="10.60.6.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75025-7" IPMask="10.32.25.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75013-5" IPMask="10.12.13.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75113-3" IPMask="10.12.113.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75121-6" IPMask="10.12.121.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75005-8" IPMask="10.60.5.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75003-4" IPMask="10.32.3.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75019-2" IPMask="10.12.19.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75029-1" IPMask="10.12.29.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75109-1" IPMask="10.12.109.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75010-8" IPMask="10.60.10.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75008-3" IPMask="10.32.8.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75028-3" IPMask="10.12.28.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75015-0" IPMask="10.12.15.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75021-8" IPMask="10.12.21.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75016-5" IPMask="10.60.16.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75016-6" IPMask="10.32.16.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75014-3" IPMask="10.12.14.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75025-9" IPMask="10.12.25.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75023-4" IPMask="10.12.23.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75004-1" IPMask="10.60.4.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75011-7" IPMask="10.32.11.x" WaggonType="R7577NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75032-5" IPMask="10.12.32.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75016-8" IPMask="10.12.16.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75018-1" IPMask="10.60.18.x" WaggonType="R7637NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75030-9" IPMask="10.12.30.x" WaggonType="R7525NO" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- EE -->
+    <WaggonNumber Identifier="508086-75022-3" IPMask="10.60.22.x" WaggonType="R7637EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75020-8" IPMask="10.32.20.x" WaggonType="R7578EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75021-6" IPMask="10.32.21.x" WaggonType="R7578EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75003-6" IPMask="10.12.3.x" WaggonType="R7525EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75012-4" IPMask="10.60.12.x" WaggonType="R7637EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75013-2" IPMask="10.60.13.x" WaggonType="R7637EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75018-2" IPMask="10.32.18.x" WaggonType="R7578EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75017-4" IPMask="10.32.17.x" WaggonType="R7578EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75002-8" IPMask="10.12.2.x" WaggonType="R7525EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75024-9" IPMask="10.60.24.x" WaggonType="R7637EE" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- Nord Süd -->
+    <WaggonNumber Identifier="508086-75019-9" IPMask="10.60.19.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81008-7" IPMask="10.16.8.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75001-8" IPMask="10.32.1.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75011-9" IPMask="10.12.11.x" WaggonType="R7524NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81042-6" IPMask="10.16.42.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75061-2" IPMask="10.32.61.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81011-8" IPMask="10.64.11.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85004-2" IPMask="10.20.4.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75095-0" IPMask="10.32.95.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81011-1" IPMask="10.16.11.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75021-5" IPMask="10.60.21.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75023-2" IPMask="10.32.23.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75009-3" IPMask="10.12.9.x" WaggonType="R7524NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81006-1" IPMask="10.16.6.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81012-9" IPMask="10.16.12.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75023-1" IPMask="10.60.23.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75009-1" IPMask="10.32.9.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81005-3" IPMask="10.16.5.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81002-0" IPMask="10.16.2.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75025-6" IPMask="10.60.25.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75022-4" IPMask="10.32.22.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81007-9" IPMask="10.16.7.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81010-3" IPMask="10.16.10.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75026-4" IPMask="10.60.26.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75006-7" IPMask="10.32.6.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81039-2" IPMask="10.16.39.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81037-6" IPMask="10.16.37.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81015-2" IPMask="10.16.15.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75027-2" IPMask="10.60.27.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75026-5" IPMask="10.32.26.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81027-7" IPMask="10.16.27.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81013-7" IPMask="10.16.13.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75017-3" IPMask="10.60.17.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75007-5" IPMask="10.32.7.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81260-4" IPMask="10.17.4.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81003-8" IPMask="10.16.3.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81019-4" IPMask="10.16.19.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-75020-7" IPMask="10.60.20.x" WaggonType="R7639NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75060-4" IPMask="10.32.60.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85011-7" IPMask="10.20.11.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81017-8" IPMask="10.16.17.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81035-0" IPMask="10.16.35.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81010-0" IPMask="10.64.10.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75058-8" IPMask="10.32.58.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85005-9" IPMask="10.20.5.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81022-8" IPMask="10.16.22.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81032-7" IPMask="10.16.32.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81003-5" IPMask="10.64.3.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75059-6" IPMask="10.32.59.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85002-6" IPMask="10.20.2.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81028-5" IPMask="10.16.28.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81009-5" IPMask="10.16.9.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81005-0" IPMask="10.64.5.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75062-0" IPMask="10.32.62.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85006-7" IPMask="10.20.6.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81004-6" IPMask="10.16.4.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81029-3" IPMask="10.16.29.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81001-9" IPMask="10.64.1.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75093-5" IPMask="10.32.93.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85001-8" IPMask="10.20.1.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81014-5" IPMask="10.16.14.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81026-9" IPMask="10.16.26.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81002-7" IPMask="10.64.2.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75094-3" IPMask="10.32.94.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85007-5" IPMask="10.20.7.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81018-6" IPMask="10.16.18.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81020-2" IPMask="10.16.20.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81007-6" IPMask="10.64.7.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75092-7" IPMask="10.32.92.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85003-4" IPMask="10.20.3.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81021-0" IPMask="10.16.21.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81001-2" IPMask="10.16.1.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81008-4" IPMask="10.64.8.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75096-8" IPMask="10.32.96.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85010-9" IPMask="10.20.10.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81016-0" IPMask="10.16.16.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81023-6" IPMask="10.16.23.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81009-2" IPMask="10.64.9.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75097-6" IPMask="10.32.97.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85009-1" IPMask="10.20.9.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81030-1" IPMask="10.16.30.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81038-4" IPMask="10.16.38.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81006-8" IPMask="10.64.6.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508036-75098-4" IPMask="10.32.98.x" WaggonType="R7574NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-85008-3" IPMask="10.20.8.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81034-3" IPMask="10.16.34.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81036-8" IPMask="10.16.36.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81004-3" IPMask="10.64.4.x" WaggonType="R7661NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35001-6" IPMask="10.56.1.x" WaggonType="R7640NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35353-4" IPMask="10.9.97.x" WaggonType="R7527NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35356-7" IPMask="10.9.100.x" WaggonType="R7526NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81033-5" IPMask="10.16.33.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81024-4" IPMask="10.16.24.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35002-4" IPMask="10.56.2.x" WaggonType="R7640NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35354-2" IPMask="10.9.98.x" WaggonType="R7526NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81031-9" IPMask="10.16.31.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-35003-2" IPMask="10.56.3.x" WaggonType="R7640NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35355-9" IPMask="10.9.99.x" WaggonType="R7526NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81025-1" IPMask="10.16.25.x" WaggonType="R7800NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81040-0" IPMask="10.16.40.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81041-8" IPMask="10.16.41.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81043-4" IPMask="10.16.43.x" WaggonType="R7805NS" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- BaWü MMI -->
+    <WaggonNumber Identifier="508026-35056-3" IPMask="10.8.56.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35057-1" IPMask="10.8.57.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35058-9" IPMask="10.8.58.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35059-7" IPMask="10.8.59.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35060-5" IPMask="10.8.60.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35061-3" IPMask="10.8.61.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35062-1" IPMask="10.8.62.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35079-5" IPMask="10.8.79.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35080-3" IPMask="10.8.80.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35081-1" IPMask="10.8.81.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35082-9" IPMask="10.8.82.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35083-7" IPMask="10.8.83.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35084-5" IPMask="10.8.84.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35085-2" IPMask="10.8.85.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35166-0" IPMask="10.8.166.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35167-8" IPMask="10.8.167.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35179-3" IPMask="10.8.179.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35180-1" IPMask="10.8.180.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35181-9" IPMask="10.8.181.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35182-7" IPMask="10.8.182.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35183-5" IPMask="10.8.183.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35184-3" IPMask="10.8.184.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-35185-0" IPMask="10.8.185.x" WaggonType="R7519BW" IPGroup="DB" Usage="Videoaufzeichnung" />
+
+    <!-- BaWü Netz 2-->
+    <WaggonNumber Identifier="508026-75184-4"	IPMask="10.12.184"	    WaggonType="R7535BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75186-9"	IPMask="10.12.186"	    WaggonType="R7535BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75187-7"	IPMask="10.12.187"	    WaggonType="R7535BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75188-5"	IPMask="10.12.188"	    WaggonType="R7535BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75189-3"	IPMask="10.12.189"	    WaggonType="R7535BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-75052-3"	IPMask="10.12.52"	      WaggonType="R7535BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81062-4"	IPMask="10.16.62"	      WaggonType="R7810BW2"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81063-2"	IPMask="10.16.63"	      WaggonType="R7810BW2"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81064-0"	IPMask="10.16.64"	      WaggonType="R7810BW2"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81065-7"	IPMask="10.16.65"	      WaggonType="R7810BW2"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81066-5"	IPMask="10.16.66"	      WaggonType="R7810BW2"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81222-4"	IPMask="10.16.222"	    WaggonType="R7810BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81223-2"	IPMask="10.16.223"	    WaggonType="R7810BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81224-0"	IPMask="10.16.224"	    WaggonType="R7810BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81225-7"	IPMask="10.16.225"	    WaggonType="R7810BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81226-5"	IPMask="10.16.226"	    WaggonType="R7810BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81227-3"	IPMask="10.16.227"	    WaggonType="R7810BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81263-8"	IPMask="10.17.7"	      WaggonType="R7805BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81274-5"	IPMask="10.17.18"	      WaggonType="R7805BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81272-9"	IPMask="10.17.16"	      WaggonType="R7805BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81273-7"	IPMask="10.17.17"	      WaggonType="R7805BW"   IPGroup="DB" Usage="Videoaufzeichnung" />
+    <!--<WaggonNumber Identifier="508086-81036-5"	IPMask="10.64.36"	      WaggonType="R7672BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81060-5"	IPMask="10.64.60"	      WaggonType="R7672BW1"  IPGroup="DB" Usage="Videoaufzeichnung" />-->
+    <WaggonNumber Identifier="508026-81283-6"	IPMask="10.17.27"	      WaggonType="R7805BW"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81284-4"	IPMask="10.17.28"	      WaggonType="R7805BW"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81291-9"	IPMask="10.17.35"	      WaggonType="R7805BW"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81292-7"	IPMask="10.17.36"	      WaggonType="R7805BW"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81293-5"	IPMask="10.17.37"	      WaggonType="R7805BW"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508026-81294-3"	IPMask="10.17.38"	      WaggonType="R7805BW"  IPGroup="DB" Usage="Videoaufzeichnung" />
+    <!--<WaggonNumber Identifier="508086-81121-5"	IPMask="10.64.121"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81122-3"	IPMask="10.64.122"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81123-1"	IPMask="10.64.123"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81124-9"	IPMask="10.64.124"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81125-6"	IPMask="10.64.125"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81126-4"	IPMask="10.64.126"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />
+    <WaggonNumber Identifier="508086-81127-2"	IPMask="10.64.127"	    WaggonType="R7672BW2" IPGroup="DB" Usage="Videoaufzeichnung" />-->
+  </WaggonNumbers>
+
+</ConfigBuilderConfiguration>

@@ -55,7 +55,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Model\WaggonTypeWithUsage.cs" />
     <Compile Include="Repositories\ConfigBuilderRepository.cs" />
     <Compile Include="Repositories\IPAddressRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
@@ -104,7 +103,6 @@
     <Compile Include="Model\Switch.cs" />
     <Compile Include="Model\Usage.cs" />
     <Compile Include="Model\Waggon.cs" />
-    <Compile Include="Model\WaggonNumber.cs" />
     <Compile Include="Model\WaggonType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

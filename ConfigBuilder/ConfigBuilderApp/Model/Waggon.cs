@@ -11,36 +11,34 @@ namespace ConfigBuilderApp.Model
     /// </summary>
     public class Waggon
     {
-        private List<WaggonTypeWithUsage> m_WaggonTypeWithUsageList;
+        private List<string> m_UsageNames;
 
         public Waggon(string identifier)
         {
             this.Identifier = identifier;
-            this.WaggonTypeWithUsageList = m_WaggonTypeWithUsageList = new List<WaggonTypeWithUsage>();
+            this.UsageNames = m_UsageNames = new List<string>();
         }
 
         public string Identifier { get; private set; }
         public string IPMask { get; set; }
         public string IPGroup { get; set; }
+        public string TypeName { get; set; }
+        public IReadOnlyCollection<string> UsageNames { get; private set; }
 
-        public IReadOnlyCollection<WaggonTypeWithUsage> WaggonTypeWithUsageList { get; private set; }
-
-        public void AddWaggonTypeWithUsageList(WaggonTypeWithUsage waggonTypeWithUsage)
+        #region UsageName functions
+        public void AddUsageName(string usageName)
         {
-            if (waggonTypeWithUsage == null) throw new ArgumentNullException("waggonTypeWithUsage");
-            if (m_WaggonTypeWithUsageList.Contains(waggonTypeWithUsage)) throw new InvalidOperationException("There is already a WaggonTypeWithUsage with the same waggon type and usage in internal list.");
-            m_WaggonTypeWithUsageList.Add(waggonTypeWithUsage);
+            if (string.IsNullOrEmpty(usageName)) throw new ArgumentNullException("usageName");
+            if (m_UsageNames.Contains(usageName)) throw new InvalidOperationException("There is already an usage with the same name in internal list.");
+            m_UsageNames.Add(usageName);
         }
 
-        public WaggonTypeWithUsage GetWaggonTypeWithUsage(string waggonTypeName, string usageName)
+        public void RemoveUsageName(string usageName)
         {
-            return m_WaggonTypeWithUsageList.First(w => w.WaggonTypeName.Equals(waggonTypeName) && w.UsageName.Equals(usageName));
+            if (m_UsageNames.Contains(usageName) == false) throw new InvalidOperationException("There is no usage with the given name in internal list.");
+            m_UsageNames.Remove(usageName);
         }
+        #endregion
 
-        public void RemoveWaggonTypeWithUsage(string waggonTypeName, string usageName)
-        {
-            var waggonType = GetWaggonTypeWithUsage(waggonTypeName, usageName);
-            m_WaggonTypeWithUsageList.Remove(waggonType);
-        }
     }
 }

@@ -15,15 +15,61 @@ namespace ConfigBuilderApp.Repositories
         public WaggonRepository(string filePath)
         {
             this.FilePath = filePath;
+            InternalLoadAllWaggonsFromFile();
         }
 
-        public string FilePath { get; private set; }
-
+        public string FilePath { get; set; }
 
         public List<Waggon> GetAll()
         {
+            return m_Waggons.Values.ToList();
+        }
+
+        public Waggon GetById(string id)
+        {
+            if (m_Waggons.ContainsKey(id) == false) throw new KeyNotFoundException(string.Format("Cannot return waggon. Waggon with id {0} not found.", id));
+            return m_Waggons[id];
+        }
+
+        public void Save(Waggon waggon)
+        {
+            if (waggon == null) throw new ArgumentNullException("waggon");
+            if (m_Waggons.ContainsKey(waggon.Identifier)) throw new InvalidOperationException(string.Format("Cannot save waggon. Waggon with id {0} already exists."));
+            m_Waggons.Add(waggon.Identifier, waggon);
+        }
+
+        public void Delete(Waggon waggon)
+        {
+            if (waggon == null) throw new ArgumentNullException("waggon");
+            if (m_Waggons.ContainsKey(waggon.Identifier) == false) throw new InvalidOperationException(string.Format("Cannot delete waggon. Waggon wit id {0} does not exist."));
+        }
+
+        public void SaveChanges()
+        {
+            InternalWriteAllWaggonsToFile();
+        }
+
+        private void InternalWriteAllWaggonsToFile()
+        {
+            XmlDocument document = new XmlDocument();
+            document.Load(this.FilePath);
+            XmlNode waggonNumbersNode = document.SelectSingleNode("/ConfigBuilderConfiguration/WaggonNumbers");
+            waggonNumbersNode.RemoveAll();
+
+            foreach (Waggon waggon in m_Waggons.Values)
+            {
+                foreach (string usage in waggon.UsageNames)
+                {
+                    var waggonNode = CreateNewWaggonNode(document, waggon, usage);
+                    waggonNumbersNode.AppendChild(waggonNode);
+                }
+            }
+            document.Save(this.FilePath);
+        }
+
+        private void InternalLoadAllWaggonsFromFile()
+        {
             m_Waggons.Clear();
-            List<Waggon> waggons = new List<Waggon>();
 
             XmlDocument document = new XmlDocument();
             document.Load(this.FilePath);
@@ -36,24 +82,56 @@ namespace ConfigBuilderApp.Repositories
                 if (m_Waggons.ContainsKey(identifier) == true)
                 {
                     waggon = m_Waggons[identifier];
+                    string usageName = waggonNumberNode.Attributes["Usage"].Value;
+                    waggon.AddUsageName(usageName);
+
                 }
                 else
                 {
-                    string ipMask = waggonNumberNode.Attributes["IPMask"].Value;
-                    string ipGroup = waggonNumberNode.Attributes["IPGroup"].Value;
-                    waggon = new Waggon(identifier);
-                    waggon.IPMask = ipMask;
-                    waggon.IPGroup = ipGroup;
-                    waggons.Add(waggon);
+                    waggon = CreateNewWaggonFromXmlNode(waggonNumberNode);
                     m_Waggons.Add(waggon.Identifier, waggon);
                 }
-
-                string typeName = waggonNumberNode.Attributes["WaggonType"].Value;
-                string usageName = waggonNumberNode.Attributes["Usage"].Value;
-                waggon.AddWaggonTypeWithUsageList(new WaggonTypeWithUsage(typeName, usageName));
             }
-
-            return waggons;
         }
+
+        private Waggon CreateNewWaggonFromXmlNode(XmlNode waggonNumberNode)
+        {
+            string identifier = waggonNumberNode.Attributes["Identifier"].Value;
+            string ipMask = waggonNumberNode.Attributes["IPMask"].Value;
+            string ipGroup = waggonNumberNode.Attributes["IPGroup"].Value;
+            string typeName = waggonNumberNode.Attributes["WaggonType"].Value;
+            string usageName = waggonNumberNode.Attributes["Usage"].Value;
+
+            Waggon waggon = new Waggon(identifier);
+            waggon.IPMask = ipMask;
+            waggon.IPGroup = ipGroup;
+            waggon.TypeName = typeName;
+            waggon.AddUsageName(usageName);
+            return waggon; 
+        }
+
+        private XmlElement CreateWaggonTemplateNode(XmlDocument document)
+        {
+            XmlElement waggonTemplateNode = document.CreateElement("WaggonNumber");
+            waggonTemplateNode.Attributes.Append(document.CreateAttribute("Identifier"));
+            waggonTemplateNode.Attributes.Append(document.CreateAttribute("IPMask"));
+            waggonTemplateNode.Attributes.Append(document.CreateAttribute("WaggonType"));
+            waggonTemplateNode.Attributes.Append(document.CreateAttribute("IPGroup"));
+            waggonTemplateNode.Attributes.Append(document.CreateAttribute("Usage"));
+            return waggonTemplateNode;
+        }
+
+        private XmlElement CreateNewWaggonNode(XmlDocument document, Waggon waggon, string usage)
+        {
+            XmlElement templateNode = CreateWaggonTemplateNode(document);
+            XmlElement waggonNode = templateNode.Clone() as XmlElement;
+            waggonNode.SetAttribute("Identifier", waggon.Identifier);
+            waggonNode.SetAttribute("IPMask", waggon.IPMask);
+            waggonNode.SetAttribute("WaggonType", waggon.TypeName);
+            waggonNode.SetAttribute("IPGroup", waggon.IPGroup);
+            waggonNode.SetAttribute("Usage", usage);
+            return waggonNode;
+        }
+
     }
 }
