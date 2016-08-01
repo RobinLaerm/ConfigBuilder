@@ -55,6 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Factory\SubsystemFactory.cs" />
+    <Compile Include="Model\SubsystemExplorer.cs" />
     <Compile Include="Repositories\ConfigBuilderRepository.cs" />
     <Compile Include="Repositories\IPAddressRepository.cs" />
     <Compile Include="Repositories\IRepository.cs" />
@@ -81,7 +83,6 @@
   <ItemGroup>
     <Compile Include="Model\Camera.cs" />
     <Compile Include="Model\ConfigBuilder.cs" />
-    <Compile Include="Model\SubsystemDataItemOverFtp.cs" />
     <Compile Include="Model\Device.cs" />
     <Compile Include="Model\IPMask.cs" />
     <Compile Include="Model\NetworkAttachedStorage.cs" />
@@ -89,16 +90,9 @@
     <Compile Include="Model\PartOfIPAddress.cs" />
     <Compile Include="Model\Setting.cs" />
     <Compile Include="Model\Subsystem.cs" />
-    <Compile Include="Model\SubsystemDoors.cs" />
-    <Compile Include="Model\SubsystemFtp.cs" />
-    <Compile Include="Model\SubsystemHbu.cs" />
     <Compile Include="Model\SubsystemKdr.cs" />
     <Compile Include="Model\SubsystemKlima.cs" />
-    <Compile Include="Model\SubsystemMonitoring.cs" />
-    <Compile Include="Model\SubsystemNetwork.cs" />
-    <Compile Include="Model\SubsystemNxVideo.cs" />
     <Compile Include="Model\SubsystemRelay.cs" />
-    <Compile Include="Model\SubsystemTopology.cs" />
     <Compile Include="Model\SubsystemWithIPAddress.cs" />
     <Compile Include="Model\Switch.cs" />
     <Compile Include="Model\Usage.cs" />

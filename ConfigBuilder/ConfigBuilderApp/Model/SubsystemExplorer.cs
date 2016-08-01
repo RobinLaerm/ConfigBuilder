@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConfigBuilderApp.Model
 {
-    public class SubsystemMonitoring : Subsystem
+    public class SubsystemExplorer : Subsystem
     {
-        public SubsystemMonitoring() : base("Monitoring")
+        public SubsystemExplorer() : base("Explorer")
         {
         }
     }

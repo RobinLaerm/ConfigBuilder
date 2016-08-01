@@ -9,22 +9,23 @@ namespace ConfigBuilderApp.Factory
 {
     public class DeviceFactory
     {
-        private static Dictionary<string, Type> m_DeviceTypes = new Dictionary<string, Type>();
-
-        public static void RegisterDeviceType(string typeName, Type type)
+        public static Device Create(string type, string id)
         {
-            m_DeviceTypes.Add(typeName, type);
-        }
-
-        public static List<string> GetPossibleDeviceTypes()
-        {
-            return m_DeviceTypes.Keys.ToList();
-        }
-
-        public static Device CreateNew(string deviceType)
-        {
-            Type typeToCreate = m_DeviceTypes[deviceType];
-            return Activator.CreateInstance(typeToCreate) as Device;
+            switch (type)
+            {
+                case "NVR":
+                    {
+                        return new NetworkVideoRecorder(id);
+                    }
+                case "NAS":
+                    {
+                        return new NetworkAttachedStorage(id);
+                    }
+                default:
+                    {
+                        throw new Exception(string.Format("Cannot create device of type {0}. Unknown device type.", type));
+                    }
+            }
         }
     }
 }

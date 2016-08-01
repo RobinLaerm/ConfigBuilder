@@ -51,7 +51,7 @@ namespace ConfigBuilderApp.UnitTests.Repositories
         {
             WaggonRepository repository = new WaggonRepository("WaggonConfiguration.xml");
             Waggon waggon = CreateFakeWaggon("1234");
-            repository.Save(waggon);
+            repository.Add(waggon);
             repository.FilePath = "EmptyConfiguration.xml";
             repository.SaveChanges();
 

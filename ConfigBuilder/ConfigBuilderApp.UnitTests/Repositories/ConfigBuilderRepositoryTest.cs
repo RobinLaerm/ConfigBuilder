@@ -15,7 +15,7 @@ namespace ConfigBuilderApp.UnitTests.Repositories
         public void ConfigBuilderRepository_Get_PropertiesAreSet()
         {
             ConfigBuilderRepository repository = new ConfigBuilderRepository(ConfigBuilderRepositoryFilePath);
-            ConfigBuilder configBuilder = repository.Get();
+            ConfigBuilder configBuilder = repository.GetById("");
             Assert.IsFalse(string.IsNullOrEmpty(configBuilder.BatchFolder));
             Assert.IsFalse(string.IsNullOrEmpty(configBuilder.ConfigurationInfoFilePath));
             Assert.IsFalse(string.IsNullOrEmpty(configBuilder.TempFolder));
@@ -27,8 +27,35 @@ namespace ConfigBuilderApp.UnitTests.Repositories
         public void ConfigBuilderRepository_SettingsAreLoaded()
         {
             ConfigBuilderRepository repository = new ConfigBuilderRepository(ConfigBuilderRepositoryFilePath);
-            ConfigBuilder configBuilder = repository.Get();
+            ConfigBuilder configBuilder = repository.GetById("");
             Assert.IsTrue(configBuilder.Settings.Count > 0);
+        }
+
+        [TestMethod]
+        [DeploymentItem("Repositories\\EmptyConfiguration.xml")]
+        public void ConfigBuilderRepository_SaveChanges_NewValuesAreWrittenToFile()
+        {
+            ConfigBuilderRepository repository = new ConfigBuilderRepository("EmptyConfiguration.xml");
+            ConfigBuilder configBuilder = repository.GetById("");
+
+            string templatesFolder = @"C:\TemplatesFolder";
+            string tempFolder = @"C:\TempFolder";
+            string batchFolder = @"C:\BatchFolder";
+            string infoFilePath = @"C:\Info.txt";
+
+            configBuilder.TemplatesFolder = templatesFolder;
+            configBuilder.TempFolder = tempFolder;
+            configBuilder.BatchFolder = batchFolder;
+            configBuilder.ConfigurationInfoFilePath = infoFilePath;
+            repository.SaveChanges();
+
+            ConfigBuilderRepository repository2 = new ConfigBuilderRepository("EmptyConfiguration.xml");
+            ConfigBuilder actual = repository2.GetById("");
+
+            Assert.AreEqual(templatesFolder, actual.TemplatesFolder);
+            Assert.AreEqual(tempFolder, actual.TempFolder);
+            Assert.AreEqual(batchFolder, actual.BatchFolder);
+            Assert.AreEqual(infoFilePath, actual.ConfigurationInfoFilePath);
         }
 
     }

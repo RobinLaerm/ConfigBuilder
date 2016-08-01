@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace ConfigBuilderApp.Repositories
 {
-    public class WaggonRepository
+    public class WaggonRepository : IRepository<Waggon, string>
     {
         private Dictionary<string, Waggon> m_Waggons = new Dictionary<string, Waggon>();
 
@@ -31,17 +31,18 @@ namespace ConfigBuilderApp.Repositories
             return m_Waggons[id];
         }
 
-        public void Save(Waggon waggon)
+        public void Add(Waggon waggon)
         {
             if (waggon == null) throw new ArgumentNullException("waggon");
-            if (m_Waggons.ContainsKey(waggon.Identifier)) throw new InvalidOperationException(string.Format("Cannot save waggon. Waggon with id {0} already exists."));
+            if (m_Waggons.ContainsKey(waggon.Identifier)) throw new InvalidOperationException(string.Format("Cannot add waggon. Waggon with id {0} already exists."));
             m_Waggons.Add(waggon.Identifier, waggon);
         }
 
-        public void Delete(Waggon waggon)
+        public void Remove(Waggon waggon)
         {
             if (waggon == null) throw new ArgumentNullException("waggon");
-            if (m_Waggons.ContainsKey(waggon.Identifier) == false) throw new InvalidOperationException(string.Format("Cannot delete waggon. Waggon wit id {0} does not exist."));
+            if (m_Waggons.ContainsKey(waggon.Identifier) == false) throw new InvalidOperationException(string.Format("Cannot remove waggon. Waggon wit id {0} does not exist."));
+            m_Waggons.Remove(waggon.Identifier);
         }
 
         public void SaveChanges()
@@ -110,21 +111,9 @@ namespace ConfigBuilderApp.Repositories
             return waggon; 
         }
 
-        private XmlElement CreateWaggonTemplateNode(XmlDocument document)
-        {
-            XmlElement waggonTemplateNode = document.CreateElement("WaggonNumber");
-            waggonTemplateNode.Attributes.Append(document.CreateAttribute("Identifier"));
-            waggonTemplateNode.Attributes.Append(document.CreateAttribute("IPMask"));
-            waggonTemplateNode.Attributes.Append(document.CreateAttribute("WaggonType"));
-            waggonTemplateNode.Attributes.Append(document.CreateAttribute("IPGroup"));
-            waggonTemplateNode.Attributes.Append(document.CreateAttribute("Usage"));
-            return waggonTemplateNode;
-        }
-
         private XmlElement CreateNewWaggonNode(XmlDocument document, Waggon waggon, string usage)
         {
-            XmlElement templateNode = CreateWaggonTemplateNode(document);
-            XmlElement waggonNode = templateNode.Clone() as XmlElement;
+            XmlElement waggonNode = document.CreateElement("WaggonNumber");
             waggonNode.SetAttribute("Identifier", waggon.Identifier);
             waggonNode.SetAttribute("IPMask", waggon.IPMask);
             waggonNode.SetAttribute("WaggonType", waggon.TypeName);

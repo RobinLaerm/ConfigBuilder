@@ -12,8 +12,8 @@ namespace ConfigBuilderApp.Bootstrapper
     {
         public void Bootstrap()
         {
-            DeviceFactory.RegisterDeviceType("NAS", typeof(NetworkAttachedStorage));
-            DeviceFactory.RegisterDeviceType("NVR", typeof(NetworkVideoRecorder));
+            //DeviceFactory.RegisterDeviceType("NAS", typeof(NetworkAttachedStorage));
+            //DeviceFactory.RegisterDeviceType("NVR", typeof(NetworkVideoRecorder));
         }
     }
 }

@@ -28,6 +28,8 @@ namespace ConfigBuilderApp.Model
             this.Subsystems = this.m_Subsystems = new List<Subsystem>();
         }
 
+        public string Id { get { return string.Format("{0}:{1}", this.Name, this.UsageName); } }
+
         /// <summary>
         /// The name of the waggon type.
         /// </summary>
