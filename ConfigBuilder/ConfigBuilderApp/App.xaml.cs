@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConfigBuilderApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -13,5 +14,12 @@ namespace ConfigBuilderApp
     /// </summary>
     public partial class App : Application
     {
+        private MainWindow m_MainWindow;
+        private MainWindowViewModel m_MainWindowViewModel;
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+        }
     }
 }
